@@ -2,7 +2,7 @@ import requests
 
 endpoint = "https://httpbin.org/anything"
 
-get_response = requests.get(endpoint)
+get_response = requests.get(endpoint, json={"query":"This is just a simple test"})
 print(get_response.json())
 
 
