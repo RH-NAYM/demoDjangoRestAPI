@@ -1,6 +1,8 @@
 import requests
 
-endpoint = "https://httpbin.org/anything"
+# endpoint = "https://httpbin.org/anything"
+
+endpoint = "https://hawkeyes.ngrok.app/"
 
 get_response = requests.get(endpoint, json={"query":"This is just a simple test"})
 print(get_response.json())
